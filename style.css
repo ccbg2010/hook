@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2c2f33;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #23272a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 80%;
+  max-width: 800px;
+}
+
+h1 {
+  text-align: center;
+  color: #7289da;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+input[type="text"],
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4f545c;
+  color: #ffffff;
+  resize: none;
+}
+
+select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4f545c;
+  color: #ffffff;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #7289da;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #5b6eae;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  color: #ffffff;
+}
+
+.checkbox-label input {
+  margin-right: 10px;
+}
+
+#token-fields,
+#webhook-fields,
+#embed-fields {
+  display: none;
+}
+
+#token-fields,
+#webhook-fields,
+#message-fields,
+#embed-fields {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #36393f;
+  border-radius: 5px;
+}
+
+#token-fields label,
+#webhook-fields label,
+#message-fields label,
+#embed-fields label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#embed-fields textarea {
+  background-color: #4f545c;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 5px;
+}

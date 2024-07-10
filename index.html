@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discohook Lite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Discohook Lite</h1>
+        <form id="webhook-form">
+            <label for="token-or-webhook">TOKEN or WEBHOOK:</label>
+            <select id="token-or-webhook" required>
+                <option value="token">TOKEN</option>
+                <option value="webhook">WEBHOOK</option>
+            </select>
+
+            <div id="token-fields">
+                <label for="token">Token:</label>
+                <input type="text" id="token" required>
+                <label for="channel-id">Channel ID:</label>
+                <input type="text" id="channel-id" required>
+            </div>
+
+            <div id="webhook-fields">
+                <label for="webhook-url">Webhook URL:</label>
+                <input type="text" id="webhook-url">
+            </div>
+
+            <label for="message-or-embed">MESSAGE or EMBED MESSAGE:</label>
+            <select id="message-or-embed" required>
+                <option value="message">MESSAGE</option>
+                <option value="embed">EMBED MESSAGE</option>
+            </select>
+
+            <div id="message-fields">
+                <label for="message-content">Message Content:</label>
+                <textarea id="message-content" rows="4" required></textarea>
+            </div>
+
+            <div id="embed-fields">
+                <label for="embed-color">Color:</label>
+                <input type="text" id="embed-color">
+
+                <label for="embed-title">Title:</label>
+                <input type="text" id="embed-title" required>
+
+                <label for="embed-url">URL:</label>
+                <input type="text" id="embed-url">
+
+                <label for="embed-author">Author:</label>
+                <input type="text" id="embed-author">
+
+                <label for="embed-description">Description:</label>
+                <textarea id="embed-description" rows="4" required></textarea>
+
+                <label for="embed-thumbnail">Thumbnail URL:</label>
+                <input type="text" id="embed-thumbnail">
+
+                <label for="embed-fields-json">Fields (JSON):</label>
+                <textarea id="embed-fields-json" rows="4"></textarea>
+
+                <label for="embed-image">Image URL:</label>
+                <input type="text" id="embed-image">
+
+                <label class="checkbox-label">
+                    <input type="checkbox" id="embed-timestamp">
+                    Include Timestamp
+                </label>
+
+                <label for="embed-footer">Footer:</label>
+                <input type="text" id="embed-footer">
+            </div>
+
+            <button type="submit" class="submit">Send</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
